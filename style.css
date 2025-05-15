@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
+    color: #4B0000; /* Maroon */
     line-height: 1.7;
 }
 
@@ -19,14 +19,14 @@ body {
     top: 10px;
     left: 8%;
     width: 80%;
-    background-color: #dee0e1;
+    backdrop-filter: blur(8px);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 2rem;
     z-index: 100; 
-    box-shadow: 0 5px 15px rgba(255, 129, 107, 0.3);
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3); /* Darker Maroon with opacity */
 }
 
 .nav-left img {
@@ -34,7 +34,7 @@ body {
 }
 
 .nav-right .contact-btn {
-    background-color: #d07616;
+    background-color: #800000; /* Maroon */
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -42,7 +42,7 @@ body {
     cursor: pointer;
 }
 .nav-right .contact-btn:hover {
-    background-color: #c8a24e;
+    background-color: #A52A2A; /* Brown */
     padding: 0.85rem 1.5rem;
 }
 
@@ -53,7 +53,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
-    color: #333;
+    color: #4B0000; /* Maroon */
     text-decoration: none;
     font-weight: 300;
 }
@@ -62,7 +62,7 @@ nav ul li::after{
     display: block;
     width: 0;
     height: 2px;
-    background: #c8a24e;
+    background: #A52A2A; /* Brown */
     transition: width .3s;
 }
 nav ul li:hover::after{
@@ -70,7 +70,7 @@ nav ul li:hover::after{
 }
 #icon {
     display: none;
-    color: rgb(233, 139, 23);
+    color: #8B0000; /* Dark Red */
     font-size: 20px;
 }
 /* Mobile Styles */
@@ -82,7 +82,7 @@ nav ul li:hover::after{
         position: fixed;
         top: 0;
         left: -100%; /* Hide off-screen initially */
-        background-color: #f6f1e8;
+        background-color: #FFF0F5; /* Light Pink for a softer feel with maroon */
         width: 80%; /* Adjust width as needed */
         min-height: 100vh;
         padding-top: 3rem;
@@ -106,7 +106,7 @@ nav ul li:hover::after{
         display: block;
     }
     nav ul li a{
-        color: #333;
+        color: #4B0000; /* Maroon */
         text-decoration: none;
         font-weight: 300;
     }
@@ -115,7 +115,7 @@ nav ul li:hover::after{
         display: block;
         width: 0;
         height: 2px;
-        background: #c8a24e;
+        background: #A52A2A; /* Brown */
         transition: width .3s;
     }
     nav ul li:hover::after{
@@ -150,7 +150,7 @@ nav ul li:hover::after{
         /* margin-top: 300px; */
     }
     .fa-circle-xmark{
-        color: blue;
+        color: #800000; /* Maroon */
         position: absolute;
         top: 10px;
         right: 10px;
@@ -166,9 +166,10 @@ nav ul li:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     min-height: 100vh;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #FAF0E6; /* Linen */
+    color: #4B0000; /* Maroon */
 }
 
 #two .container {
@@ -190,7 +191,7 @@ nav ul li:hover::after{
     align-items: center;
     gap: 25px; 
     position: relative;
-    background-color: #e16116;
+    background-color: #8B0000; /* Dark Red */
 }
 
 #two .service-card {
@@ -219,7 +220,7 @@ nav ul li:hover::after{
     bottom: 0;
     border-radius: 15px;
     padding: 2px; 
-    background: linear-gradient(to right, #e0b0ff, #c080ff); /* Purple gradient */
+    background: linear-gradient(to right, #B22222, #DC143C); /* Firebrick to Crimson */
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
@@ -234,7 +235,7 @@ nav ul li:hover::after{
     bottom: 0;
     border-radius: 15px;
     padding: 2px;
-    background: linear-gradient(to right, #ffc080, #ff8040); /* Orange gradient */
+    background: linear-gradient(to right, #CD5C5C, #DAA520); /* IndianRed to Goldenrod */
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
@@ -249,7 +250,7 @@ nav ul li:hover::after{
     bottom: 0;
     border-radius: 15px;
     padding: 2px;
-    background: linear-gradient(to right, #a0d0ff, #70a0ff); /* Blue gradient */
+    background: linear-gradient(to right, #800000, #A52A2A); /* Maroon to Brown */
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
@@ -265,7 +266,7 @@ nav ul li:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; 
+    background-color: #F8F8FF; /* GhostWhite */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden; 
 }
@@ -280,13 +281,13 @@ nav ul li:hover::after{
 #two .service-card .card-content h3 {
     margin: 0 0 5px 0;
     font-size: 1.2em;
-    color: #444;
+    color: #555; /* Slightly lighter black */
 }
 
 #two .service-card .card-content p {
     margin: 0;
     font-size: 0.9em;
-    color: #666;
+    color: #777; /* Even lighter black */
     line-height: 1.4;
 }
 
@@ -300,24 +301,24 @@ nav ul li:hover::after{
 
 #two .main-content h1 {
     font-size: 3em;
-    color: #2c3e50; 
+    color: #4B0000; /* Maroon */
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 #two .main-content h1 .highlight {
-    color: #ff8c42; 
+    color: #A52A2A; /* Brown */
 }
 
 #two .main-content p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555;
+    color: #666; /* Darker gray */
 }
 
 #two .btn-hire {
-    background-color: #ff8c42; 
+    background-color: #8B0000; /* Dark Red */
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -326,11 +327,11 @@ nav ul li:hover::after{
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(255, 140, 66, 0.3);
+    box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3); /* Dark Red with opacity */
 }
 
 #two .btn-hire:hover {
-    background-color: #e07b34; 
+    background-color: #A52A2A; /* Brown */
 }
 
 @media (max-width: 992px) {
@@ -405,7 +406,7 @@ nav ul li:hover::after{
 }
 
 #three .exceptional-works {
-    background-color: #f8f8f8; /* Light background as seen in the screenshot */
+    background-color: #F8F8F8; /* Light gray */
     padding: 60px 0;
     position: relative;
     overflow: hidden; /* To contain absolute positioned circles */
@@ -419,13 +420,13 @@ nav ul li:hover::after{
 
 #three .content-left h1 {
     font-size: 3em;
-    color: #333;
+    color: #4B0000; /* Maroon */
     margin-bottom: 20px;
 }
 
 #three .content-left p {
     font-size: 1.1em;
-    color: #666;
+    color: #666; /* Darker gray */
     line-height: 1.6;
     margin-bottom: 30px;
 }
@@ -438,7 +439,7 @@ nav ul li:hover::after{
 
 #three .content-left ol li {
     font-size: 1.2em;
-    color: #333;
+    color: #4B0000; /* Maroon */
     margin-bottom: 15px;
     position: relative;
     padding-left: 25px; /* Space for custom bullet */
@@ -450,7 +451,7 @@ nav ul li:hover::after{
     left: 0;
     top: 0;
     font-weight: bold;
-    color: #e97d11; /* Example bullet color */
+    color: #8B0000; /* Dark Red */
 }
 
 #three .content-right {
@@ -490,13 +491,13 @@ nav ul li:hover::after{
 
 #three .content-right .card h3 {
     font-size: 1.3em;
-    color: #333;
+    color: #4B0000; /* Maroon */
     margin-bottom: 5px;
 }
 
 #three .content-right .card p {
     font-size: 0.9em;
-    color: #666;
+    color: #666; /* Darker gray */
 }
 
 /* Decorative circles */
@@ -512,7 +513,7 @@ nav ul li:hover::after{
 #three .exceptional-works::before {
     width: 50px;
     height: 50px;
-    background-color: #ff6b6b; /* Reddish circle */
+    background-color: #A52A2A; /* Brown */
     top: 50px;
     left: 45%;
 }
@@ -520,7 +521,7 @@ nav ul li:hover::after{
 #three .exceptional-works::after {
     width: 30px;
     height: 30px;
-    background-color: #6ab04c; /* Greenish circle */
+    background-color: #CD853F; /* Peru */
     top: 100px;
     right: 5%;
 }
@@ -532,7 +533,7 @@ nav ul li:hover::after{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ffa500; /* Orange circle */
+    background-color: #D2691E; /* Chocolate */
     top: 0;
     right: 15%;
     opacity: 0.3;
@@ -545,7 +546,7 @@ nav ul li:hover::after{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #007bff; /* Blue circle */
+    background-color: #B22222; /* Firebrick */
     bottom: 120px;
     right: 0;
     opacity: 0.3;
@@ -593,7 +594,7 @@ nav ul li:hover::after{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #4B0000; /* Maroon */
     position: relative;
     display: inline-block;
     opacity: 0;
@@ -608,14 +609,14 @@ nav ul li:hover::after{
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: #ff6b6b;
+    background-color: #8B0000; /* Dark Red */
     border-radius: 2px;
 }
 
 
 .section-subtitle {
     font-size: 18px;
-    color: #7f8c8d;
+    color: #708090; /* Slate Gray */
     margin-bottom: 40px;
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out 0.4s forwards, slideInBottom 0.5s ease-in-out 0.4s forwards;
@@ -629,17 +630,17 @@ nav ul li:hover::after{
 }
 
 .bg-light {
-    background-color: #f9f9f9;
+    background-color: #F5F5F5; /* WhiteSmoke */
 }
 
 .bg-dark {
-    background-color: #2c3e50;
+    background-color: #4B0000; /* Maroon */
     color: #fff;
 }
 
 /* Reusable Button Styles */
 .primary-button {
-    background-color: #ff6b6b;
+    background-color: #8B0000; /* Dark Red */
     color: white;
     padding: 12px 25px;
     border: none;
@@ -647,7 +648,7 @@ nav ul li:hover::after{
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3); /* Dark Red with opacity */
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -656,15 +657,15 @@ nav ul li:hover::after{
 }
 
 .primary-button:hover {
-    background-color: #ff4757;
+    background-color: #A52A2A; /* Brown */
     transform: translateY(-2px);
 }
 
 .secondary-button {
     background-color: transparent;
-    color: #3498db;
+    color: #B22222; /* Firebrick */
     padding: 12px 25px;
-    border: 2px solid #3498db;
+    border: 2px solid #B22222; /* Firebrick */
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -677,9 +678,9 @@ nav ul li:hover::after{
 }
 
 .secondary-button:hover {
-    background-color: #3498db;
+    background-color: #B22222; /* Firebrick */
     color: white;
-    border-color: #3498db;
+    border-color: #B22222; /* Firebrick */
     transform: translateY(-2px);
 }
 
@@ -689,7 +690,7 @@ nav ul li:hover::after{
     text-align: left;
     padding-top: 120px;
     padding-bottom: 100px;
-    background-image: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    background-image: linear-gradient(to bottom, #F5F5F5, #ffffff); /* WhiteSmoke to White */
 }
 
 
@@ -704,7 +705,7 @@ nav ul li:hover::after{
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #4B0000; /* Maroon */
     line-height: 1.2;
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out 0s forwards, slideInLeft 0.5s ease-in-out 0s forwards;
@@ -712,7 +713,7 @@ nav ul li:hover::after{
 
 .hero-subtitle {
     font-size: 20px;
-    color: #7f8c8d;
+    color: #708090; /* Slate Gray */
     margin-bottom: 30px;
     max-width: 400px;
     opacity: 0;
@@ -731,13 +732,13 @@ nav ul li:hover::after{
 }
 
 .social-links a {
-    color: #7f8c8d;
+    color: #708090; /* Slate Gray */
     font-size: 20px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #3498db;
+    color: #B22222; /* Firebrick */
     transform: scale(1.2);
 }
 
@@ -784,12 +785,12 @@ nav ul li:hover::after{
 
 
 .badge-icon {
-    color: #ff6b6b;
+    color: #8B0000; /* Dark Red */
     font-size: 18px;
 }
 
 .badge-text {
-    color: #2c3e50;
+    color: #4B0000; /* Maroon */
     font-size: 14px;
     font-weight: 500;
 }
@@ -803,7 +804,7 @@ nav ul li:hover::after{
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ff6b6b;
+    background-color: #8B0000; /* Dark Red */
     color: white;
     width: 120px;
     height: 120px;
@@ -812,7 +813,7 @@ nav ul li:hover::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 10px 30px rgba(139, 0, 0, 0.3); /* Dark Red with opacity */
     animation: pulse 2s infinite, fadeIn 1s ease-in-out 1.2s forwards;
     opacity: 0;
 }
@@ -963,7 +964,7 @@ nav ul li:hover::after{
 
 .recent-projects-section h2 {
     font-size: 2.5em; /* Adjust font size */
-    color: #333; /* Darker text color */
+    color: #4B0000; /* Maroon */
     margin-bottom: 40px;
 }
 
@@ -1095,7 +1096,7 @@ nav ul li:hover::after{
 .more-projects-button {
     border-radius: 20px;
     display: inline-block; /* Allows padding and margins */
-    background-color: #e87c1e; /* A nice blue, adjust to your brand color */
+    background-color: #A52A2A; /* Brown */
     color: white;
     padding: 10px 20px;
     border-radius: 25px; /* Slightly rounded corners */
@@ -1107,7 +1108,7 @@ nav ul li:hover::after{
 }
 
 .more-projects-button:hover {
-    background-color: #b34b00; /* Darker blue on hover */
+    background-color: #8B0000; /* Dark Red */
     transform: translateY(-2px); /* Slight lift on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
 }
@@ -1115,9 +1116,9 @@ nav ul li:hover::after{
 /* ... Responsive adjustments remain the same ... */
 /* Footer Container */
 .footer {
-    background-color: #ffffff; /* White background as in the image */
+    background-color: #FAF0E6; /* Linen */
     padding: 60px 100px; /* Adjust padding as needed */
-    color: #333; /* Default text color */
+    color: #4B0000; /* Maroon */
     display: flex;
     flex-direction: column;
     gap: 80px; /* Space between top and bottom sections */
@@ -1132,7 +1133,7 @@ nav ul li:hover::after{
 
 .footer-cta h2 {
     font-size: 3em; /* Adjust font size for "Ready To Get Started?" */
-    color: #1a2a5e; /* Dark blue color */
+    color: #4B0000; /* Maroon */
     margin: 0; /* Remove default margin */
     line-height: 1.2;
 }
@@ -1146,12 +1147,12 @@ nav ul li:hover::after{
 
 .footer-contact p {
     font-size: 1.2em; /* Adjust font size for the message */
-    color: #333;
+    color: #4B0000; /* Maroon */
     margin: 0;
 }
 
 .shoot-message-btn {
-    background-color: #ff7f32; /* Orange color for the button */
+    background-color: #A52A2A; /* Brown */
     color: #ffffff;
     border: none;
     border-radius: 50%; /* Makes it a circle */
@@ -1169,7 +1170,7 @@ nav ul li:hover::after{
 }
 
 .shoot-message-btn:hover {
-    background-color: #e66a21; /* Darker orange on hover */
+    background-color: #8B0000; /* Dark Red */
 }
 
 /* Footer Bottom Section */
@@ -1184,7 +1185,7 @@ nav ul li:hover::after{
 .footer-logo {
     font-size: 1.5em; /* Adjust logo font size */
     font-weight: bold;
-    color: #333;
+    color: #4B0000; /* Maroon */
 }
 
 .footer-nav ul {
@@ -1197,14 +1198,14 @@ nav ul li:hover::after{
 
 .footer-nav ul li a {
     text-decoration: none;
-    color: #ff7f32; /* Orange color for navigation links */
+    color: #A52A2A; /* Brown */
     font-weight: bold;
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 .footer-nav ul li a:hover {
-    color: #e66a21; /* Darker orange on hover */
+    color: #8B0000; /* Dark Red */
 }
 
 /* Responsive adjustments (optional) */
@@ -1212,6 +1213,7 @@ nav ul li:hover::after{
     .footer {
         padding: 40px 30px;
         gap: 50px;
+        background-color: #FAF0E6;
     }
 
     .footer-top {
@@ -1237,6 +1239,8 @@ nav ul li:hover::after{
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
+    background-color: #FAF0E6; /* Linen */
+
     }
 
     .footer-nav ul {
@@ -1244,4 +1248,3 @@ nav ul li:hover::after{
         gap: 10px;
     }
 }
-/* top button */
