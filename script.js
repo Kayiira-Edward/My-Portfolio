@@ -27,3 +27,4 @@ document.querySelector('.fa-circle-xmark').addEventListener('click', () => {
     primaryNavigation.setAttribute('data-visible', false);
     mobileNavToggle.classList.remove('open');
 });
+// button
