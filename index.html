@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-...trimmed-hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+
+      /* Basic styles (you'll expand on these) */
+      body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .section {
+        padding: 80px 0;
+        text-align: center;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Default to 2 columns */
+        gap: 40px;
+        align-items: center;
+      }
+      /* Mobile Styles */
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr; /* Stack on small screens */
+        }
+        .section {
+            padding: 60px 20px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- <nav>
+        <div class="container">
+            <h3>KEdward</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <button>Contact Me</button>
+        </div>
+    </nav> -->
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <img src="photos/head1.webp" alt="Logo">
+        </div>
+        <!-- <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button> -->
+        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+        <i class="fa-solid fa-bars" id="icon"></i> 
+        <ul id="primary-navigation" data-visible="false" class="nav-list nav-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <!-- <button class="mobile-nav-close" aria-controls="primary-navigatio" aria-expanded="true">
+                <i class="fa-solid fa-xmark"></i>
+            </button> -->
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+            <i class="fa-solid fa-circle-xmark" id="icon"></i>
+        </ul>
+        <div class="nav-right">
+            <button class="contact-btn">Contact Me</button>
+        </div>
+        
+    </nav>
+    <header class="hero section">
+        <div class="container">
+            <div class="grid hero-content-grid">
+                <div class="hero-content">
+                    <span class="hi-text">My! I Am</span>
+                    <h1 class="hero-title">Brunao Dev</h1>
+                    <p class="hero-subtitle">Work Hard, Be Kind & Client.</p>
+                    <div class="button-group">
+                        <button class="primary-button">Hire Me Now</button>
+                        <button class="secondary-button">Explore More</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="photos/messages1.webp" alt="Brunao Dev" class="hero-image">
+                    <div class="badge top-badge">
+                        <span class="badge-icon"><i class="fas fa-award"></i></span>
+                        <span class="badge-text">Best Design Award</span>
+                    </div>
+                    <div class="badge bottom-badge">
+                        <span class="badge-icon"><i class="fas fa-user-check"></i></span>
+                        <span class="badge-text">UI/UX Expert</span>
+                    </div>
+                    <div class="floating-element">
+                        <span class="floating-number">98%</span>
+                        <span class="floating-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- TWO -->
+<div class="container" id="two">
+    <div class="sidebar">
+        <div class="service-card developer">
+            <div class="icon-container">
+                <img src="photos/messages1.webp" alt="Developer Icon">
+            </div>
+            <div class="card-content">
+                <h3>Developer</h3>
+                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+            </div>
+        </div>
+        <div class="service-card ui-ux">
+            <div class="icon-container">
+                <img src="photos/messages1.webp" alt="UI/UX Icon">
+            </div>
+            <div class="card-content">
+                <h3>ui/Ux</h3>
+                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+            </div>
+        </div>
+        <div class="service-card design">
+            <div class="icon-container">
+                <img src="photos/messages1.webp" alt="Design Icon">
+            </div>
+            <div class="card-content">
+                <h3>Design</h3>
+                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-content">
+        <h1>My Awesome <span class="highlight">Services</span></h1>
+        <p>Lorem ipsum dummy text are usually use print and website industry. So I used their also</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula tristique, faucibus sem non, finibus lorem. Suspendisse vel gravida mauris. Sed tempus dolor id placerat vestibulum. Donec a commodo metus.</p>
+        <button class="btn-hire">Hire CV</button>
+    </div>
+</div>
+ <!-- END OF TWO -->
+  <!-- three -->
+  <section class="exceptional-works" id="three">
+    <div class="container">
+        <div class="content-left">
+            <h1>Clients Get Always Exceptional Works From Me</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+            <ol>
+                <li>Top Quality Works</li>
+                <li>Commitments</li>
+                <li>24 Hours active</li>
+            </ol>
+        </div>
+        <div class="content-right">
+            <img src="photos/messages1.webp" alt="Man pointing to the side">
+            <div class="card">
+                <img src="photos/messages1.webp" alt="24 Hours Active Icon">
+                <h3>24 Hours active</h3>
+                <p>24 hours active chat your problem</p>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- three -->
+    <!-- <section id="services" class="services section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Awesome Services</h2>
+            <p class="section-subtitle">Services I can help you with</p>
+            <div class="grid services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">I will make user-friendly and attractive interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">I will develop websites using the latest technologies.</p>
+                </div>
+                 <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="service-title">Responsive Design</h3>
+                    <p class="service-description">I will make your website look good on all devices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">I will optimize your website for search engines.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<!-- three -->
+ <!-- projects -->
+ <section class="recent-projects-section">
+    <h2>Recent Project</h2>
+    <div class="project-cards-container">
+        <div class="project-card">
+            <img src="photos/messages1.webp" alt="Project 1 Description">
+            <div class="overlay">
+                <h3>DETAIL</h3>
+                <p>THE PROJECT</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="photos/messages1.webp" alt="Project 2 Description">
+            <div class="overlay">
+                <h3>DETAIL</h3>
+                <p>THE PROJECT</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="photos/messages1.webp" alt="Project 3 Description">
+            <div class="overlay">
+                <h3>DETAIL</h3>
+                <p>THE PROJECT</p>
+            </div>
+        </div>
+    </div>
+    <div class="more-projects-button-container">
+        <a href="project.html" class="more-projects-button">
+            View More Projects </a>
+    </div>
+</section>
+<!-- projects -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-cta">
+            <h2>Ready To Get Started?</h2>
+        </div>
+        <div class="footer-contact">
+            <p>You Know About Me, Let's Talk About You.</p>
+            <button class="shoot-message-btn">SHOOT MESSAGE</button>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-logo">
+            Mrstudio
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+    <script src="https://kit.fontawesome.com/2ebd5005a1.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
