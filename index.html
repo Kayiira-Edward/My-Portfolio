@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="photos/fav.png">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -44,68 +45,80 @@
             padding: 60px 20px;
         }
       }
+      .cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #8b00004d; /* Change to your theme color */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+}
+
     </style>
 </head>
 <body>
-    <!-- <nav>
-        <div class="container">
-            <h3>KEdward</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-            <button>Contact Me</button>
-        </div>
-    </nav> -->
+    <div class="cursor-dot"></div>
     <nav class="navbar">
 
         <div class="nav-left">
-            <img src="photos/head1.webp" alt="Logo">
+            <img src="photos/Kay.Edward.png" alt="Logo">
         </div>
-        <!-- <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
-        </button> -->
-        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
         <i class="fa-solid fa-bars" id="icon"></i> 
         <ul id="primary-navigation" data-visible="false" class="nav-list nav-center">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <!-- <button class="mobile-nav-close" aria-controls="primary-navigatio" aria-expanded="true">
-                <i class="fa-solid fa-xmark"></i>
-            </button> -->
-            <!-- <i class="fa-solid fa-xmark"></i> -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#two">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" id="icon"></i>
         </ul>
         <div class="nav-right">
-            <button class="contact-btn">Contact Me</button>
+            <!-- <button class="contact-btn">Contact Me</button> -->
+            <a href="#contact" class="contact-btn">Contact</a>
         </div>
         
     </nav>
-    <header class="hero section">
+    <header class="hero section" id="home">
         <div class="container">
             <div class="grid hero-content-grid">
                 <div class="hero-content">
-                    <span class="hi-text">Hey! I Am</span>
+                    <span class="hi-text">Hi, I Am</span>
                     <h1 class="hero-title">Kayiira Edward</h1>
-                    <p class="hero-subtitle">Work Hard, Be Kind & Client.</p>
+                    <p class="hero-subtitle">A passionate Front-End Developer and Certified ICDL Ambassador. I help businesses and individuals bring their ideas to life with modern, responsive, and user-friendly websites. 
+                        Let’s turn your vision into a stunning digital experience!</p>
+                        <section id="tech-stack">
+                            <h3>Technologies I Use</h3>
+                            <div class="tech-icons">
+                              <i class="fab fa-html5" title="HTML5"></i>
+                              <i class="fab fa-css3-alt" title="CSS3"></i>
+                              <i class="fab fa-js" title="JavaScript"></i>
+                              <i class="fab fa-node-js" title="Node.js"></i>
+                              <i class="fab fa-figma" title="Figma"></i>
+                              <i class="fab fa-git-alt" title="Git"></i>
+                              <i class="fab fa-github" title="GitHub"></i>
+                              <i class="fab fa-python" title="Python"></i>
+                            </div>
+                          </section>
                     <div class="button-group">
-                        <button class="primary-button">Hire Me Now</button>
-                        <button class="secondary-button">Explore More</button>
+                        <a href="#two" class="primary-button"> Let's Work Together</a>
+                        <a href="#projects" class="secondary-button">View My Work</a>
                     </div>
                     <div class="social-links">
-                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/edwardkayiira" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Kayiira-Edward" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/iam_ed_wa_rd" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://wa.me/256746838046 target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/ofx.edward" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="hero-image-container">
                     <img src="photos/edward.JPG" alt="Brunao Dev" class="hero-image">
                     <div class="badge top-badge">
                         <span class="badge-icon"><i class="fas fa-award"></i></span>
-                        <span class="badge-text">FrontEnd Dev</span>
+                        <span class="badge-text">Front-end Dev</span>
                     </div>
                     <div class="badge bottom-badge">
                         <span class="badge-icon"><i class="fas fa-user-check"></i></span>
@@ -128,34 +141,37 @@
             </div>
             <div class="card-content">
                 <h3>Developer</h3>
-                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                <p>From responsive websites to interactive web apps, I write scalable code that performs flawlessly across all devices. Clean. Optimized. Future-ready.
+                </p>
             </div>
         </div>
         <div class="service-card ui-ux">
             <div class="icon-container">
-                <img src="photos/messages1.webp" alt="UI/UX Icon">
+                <img src="photos/edward4.JPG" alt="UI/UX Icon">
             </div>
             <div class="card-content">
-                <h3>ui/Ux</h3>
-                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                <h3>UI/UX</h3>
+                <p>User-first design that’s beautiful and intuitive. I create layouts that not only look good but feel right. Designed to make every click count.
+                </p>
             </div>
         </div>
         <div class="service-card design">
             <div class="icon-container">
-                <img src="photos/messages1.webp" alt="Design Icon">
+                <img src="photos/edward2.JPG" alt="Design Icon">
             </div>
             <div class="card-content">
                 <h3>Design</h3>
-                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                <p>Logos, banners, posters, and digital assets – all tailored to reflect your brand. Visually stunning. Strategically aligned.
+                </p>
             </div>
         </div>
 
     </div>
     <div class="main-content">
-        <h1>My Awesome <span class="highlight">Services</span></h1>
-        <p>Lorem ipsum dummy text are usually use print and website industry. So I used their also</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ligula tristique, faucibus sem non, finibus lorem. Suspendisse vel gravida mauris. Sed tempus dolor id placerat vestibulum. Donec a commodo metus.</p>
-        <button class="btn-hire">Hire CV</button>
+        <h1>My Services -<span class="highlight">Designed to Deliver Results</span></h1>
+        <p>I offer clean, creative, and conversion-driven solutions tailored to your specific needs.</p>
+        <p>Whether you're starting from scratch or need a revamp, I bring strategy, design, and code together to elevate your online presence.</p>
+        <a href="cv.pdf" class="btn-hire">Download My CV</a>
     </div>
 </div>
  <!-- END OF TWO -->
@@ -163,77 +179,63 @@
   <section class="exceptional-works" id="three">
     <div class="container">
         <div class="content-left">
-            <h1>Clients Get Always Exceptional Works From Me</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+            <h1>My Clients Always Receive Outstanding Results</h1>
+            <p>I combine technical expertise with creativity to deliver results that go beyond expectations. No matter the project, I bring passion, precision, and professionalism to the table.
+            </p>
             <ol>
-                <li>Top Quality Works</li>
-                <li>Commitments</li>
-                <li>24 Hours active</li>
+                <li>High-quality standards</li>
+                <li>Clear communication</li>
+                <li>Dedicated support – always online</li>
             </ol>
         </div>
         <div class="content-right">
-            <img src="photos/messages1.webp" alt="Man pointing to the side">
+            <img src="photos/group1.JPG" alt="Man pointing to the side" id="group">
             <div class="card">
-                <img src="photos/messages1.webp" alt="24 Hours Active Icon">
-                <h3>24 Hours active</h3>
-                <p>24 hours active chat your problem</p>
+                <img src="photos/eddy.png" alt="24 Hours Active Icon" id="eddy">
+                <h3>Need help?</h3>
+                <p>I’m just a message away. Quick responses. Clear updates. Always available to support your project needs.</p>
             </div>
         </div>
     </div>
 </section>
-   <!-- three -->
-    <!-- <section id="services" class="services section bg-light">
-        <div class="container">
-            <h2 class="section-title">My Awesome Services</h2>
-            <p class="section-subtitle">Services I can help you with</p>
-            <div class="grid services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-palette"></i></div>
-                    <h3 class="service-title">UI/UX Design</h3>
-                    <p class="service-description">I will make user-friendly and attractive interfaces.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-code"></i></div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-description">I will develop websites using the latest technologies.</p>
-                </div>
-                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3 class="service-title">Responsive Design</h3>
-                    <p class="service-description">I will make your website look good on all devices.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-search"></i></div>
-                    <h3 class="service-title">SEO Optimization</h3>
-                    <p class="service-description">I will optimize your website for search engines.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-<!-- three -->
- <!-- projects -->
+   
  <section class="recent-projects-section">
-    <h2>Recent Project</h2>
+    <h2 id="projects">Latest Projects I've Crafted</h2>
     <div class="project-cards-container">
         <div class="project-card">
             <img src="photos/messages1.webp" alt="Project 1 Description">
             <div class="overlay">
-                <h3>DETAIL</h3>
-                <p>THE PROJECT</p>
+                <p>A sleek, secure messaging UI that mimics modern chat apps. Mobile-ready, fast, and user-friendly.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
             </div>
         </div>
         <div class="project-card">
             <img src="photos/messages1.webp" alt="Project 2 Description">
             <div class="overlay">
-                <h3>DETAIL</h3>
-                <p>THE PROJECT</p>
+                <p>A sleek, secure messaging UI that mimics modern chat apps. Mobile-ready, fast, and user-friendly.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
             </div>
         </div>
         <div class="project-card">
             <img src="photos/messages1.webp" alt="Project 3 Description">
             <div class="overlay">
-                <h3>DETAIL</h3>
-                <p>THE PROJECT</p>
+                <p>A sleek, secure messaging UI that mimics modern chat apps. Mobile-ready, fast, and user-friendly.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -243,25 +245,34 @@
     </div>
 </section>
 <!-- projects -->
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="footer-top">
         <div class="footer-cta">
-            <h2>Ready To Get Started?</h2>
+            <h2>Ready to Start Something Amazing?</h2>
+            <p>You’ve seen what I can do. Now let’s talk about what I can do for you.
+                Whether you have a clear vision or just an idea, I’m here to help you make it real.
+                </p>
         </div>
         <div class="footer-contact">
             <p>You Know About Me, Let's Talk About You.</p>
-            <button class="shoot-message-btn">SHOOT MESSAGE</button>
+            <div class="shoot-message-btn">Let’s Talk</div>
+            <div class="contact">
+                <p>I usually respond within minutes on <span>WhatsApp</span> and <span>LinkedIn</span></p>
+                <a href="https://www.linkedin.com/in/edwardkayiira" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/256746838046"   target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="footer-logo">
-            Mrstudio
+            Kay.Edward
         </div>
         <nav class="footer-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#two">Service</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </div>
@@ -270,5 +281,26 @@
     <script src="https://kit.fontawesome.com/2ebd5005a1.js" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("contextmenu", (e) => e.preventDefault());
+        document.onkeydown = function(e) {
+          if (
+            e.key === "F12" ||
+            (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+            (e.ctrlKey && e.key === "U")
+          ) {
+            return false;
+          }
+        };
+      </script>
+    <script>
+        const dot = document.querySelector(".cursor-dot");
+      
+        window.addEventListener("mousemove", (e) => {
+          dot.style.top = `${e.clientY}px`;
+          dot.style.left = `${e.clientX}px`;
+        });
+      </script>
+      
 </body>
 </html>
